@@ -1,3 +1,4 @@
+**🔗 [View the live website](https://urawesomefriendd.github.io/celestial-symphony/)**
 # 🌌 Celestial Symphony: Mapping the Sounds of the Universe
 
 Sonifying real astronomical data — turning a variable star, a pulsar, an exoplanet, and a comet into music, using real measurements from NASA, AAVSO, and JPL.
