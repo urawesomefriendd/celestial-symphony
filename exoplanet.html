@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kepler-10 b — Celestial Symphony</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-exoplanet">
+<canvas id="stars"></canvas>
+
+<nav class="top">
+  <a class="brand" href="index.html">Celestial Symphony</a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="https://github.com/" target="_blank">Journal ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Exoplanet</div>
+    <h1>Kepler-10 b</h1>
+    <p class="lede">One of the first confirmed rocky planets beyond our solar system — orbiting so close to its star that a year there lasts less than a day here.</p>
+  </div>
+
+  <div class="orbit-divider">
+    <svg width="220" height="60" viewBox="0 0 220 60">
+      <ellipse class="path" cx="110" cy="30" rx="100" ry="18"/>
+      <circle class="marker" cx="195" cy="24" r="4"/>
+    </svg>
+  </div>
+
+  <section>
+    <div class="section-sub">The Real Object</div>
+    <h2 class="section-title">A world we've never seen — only measured</h2>
+    <p>Kepler-10 b was one of the first small, rocky exoplanets confirmed by NASA's Kepler mission. It orbits its star in just under 20 hours, so close that its surface is likely a permanent ocean of molten rock. We can't photograph it directly — instead, astronomers detect it by watching its star's light dim very slightly every time the planet passes in front of it, a "transit."</p>
+  </section>
+
+  <section>
+    <div class="section-sub">The Data</div>
+    <h2 class="section-title">What I actually used</h2>
+    <table class="data">
+      <tr><th>Metric</th><th>Value</th></tr>
+      <tr><td>Orbital period</td><td class="val">0.837491 days (~20 hrs)</td></tr>
+      <tr><td>Transit duration</td><td class="val">1.81 hours</td></tr>
+      <tr><td>Transit depth</td><td class="val">0.0191%</td></tr>
+    </table>
+    <p class="source-note">Source: <a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank">NASA Exoplanet Archive</a> (Bonomo et al. 2025; Holczer et al. 2016).</p>
+  </section>
+
+  <section>
+    <div class="section-sub">Listen</div>
+    <h2 class="section-title">A planet crossing its star</h2>
+    <div class="listen-panel">
+      <div class="label">Audio</div>
+      <audio controls src="audio/exoplanet_transit.wav"></audio>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-sub">The Mapping</div>
+    <h2 class="section-title">Why it sounds this way</h2>
+    <div class="mapping">
+      <div class="rule">real orbital period → repeating volume dip</div>
+      <p>I generated a steady tone representing the star's constant light, then used the planet's real measured orbital period and transit duration to briefly dim that tone's volume at the correct, repeating interval — one dip per orbit. The real transit only dims the star by 0.02%, far too subtle to hear, so I exaggerated the dip's size for audibility while keeping its timing scientifically accurate.</p>
+    </div>
+  </section>
+
+  <div class="pagenav">
+    <a href="pulsar.html">← The Crab Pulsar</a>
+    <a href="halley.html">Next: Halley's Comet →</a>
+  </div>
+
+</div>
+
+<footer>
+  Data: NASA Exoplanet Archive<br>
+  <a href="https://github.com/" target="_blank">View source & journal on GitHub</a>
+</footer>
+
+<script src="starfield.js"></script>
+</body>
+</html>

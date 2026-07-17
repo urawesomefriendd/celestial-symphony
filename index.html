@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celestial Symphony — Mapping the Sounds of the Universe</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="stars"></canvas>
+
+<nav class="top">
+  <a class="brand" href="index.html">Celestial Symphony</a>
+  <div class="links">
+    <a href="index.html" class="active">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="https://github.com/" target="_blank">Journal ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">A Sonification Project</div>
+    <h1>Mapping the <em>Sounds</em><br>of the Universe</h1>
+    <p class="lede">Four real celestial objects. Four honest, scientifically-grounded translations of their real data into sound.</p>
+  </div>
+
+  <div class="orbit-divider">
+    <svg width="220" height="60" viewBox="0 0 220 60">
+      <ellipse class="path" cx="110" cy="30" rx="100" ry="18"/>
+      <circle class="marker" cx="205" cy="30" r="4"/>
+    </svg>
+  </div>
+
+  <section>
+    <div class="section-sub">The Full Composition</div>
+    <h2 class="section-title">Celestial Symphony</h2>
+    <p>A single piece built from all four layers below — starting with a variable star's slow melody, building through a pulsar's rhythm and an exoplanet's pulse, and ending in a comet's 76-year journey to the sun and back.</p>
+    <div class="listen-panel" style="margin-top: 20px;">
+      <div class="label">Watch &amp; Listen</div>
+      <video controls poster="">
+        <source src="video/celestial_symphony_FINAL.mp4" type="video/mp4">
+        Your browser doesn't support embedded video — <a href="video/celestial_symphony_FINAL.mp4">download it here</a>.
+      </video>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-sub">Four Objects, Four Sounds</div>
+    <h2 class="section-title">The Core Collection</h2>
+    <p>Each object below uses real published data and its own scientifically-justified mapping to sound. Click into any of them for the full data, the audio, and the reasoning behind it.</p>
+
+    <div class="grid" style="margin-top: 24px;">
+      <a class="card" href="mira.html" style="--card-accent: var(--mira);">
+        <span class="tag">Variable Star</span>
+        <h3>Mira</h3>
+        <p>A star that swings between bright and dim over a 332-day cycle — sonified as a melody, one note per real day of observation.</p>
+      </a>
+      <a class="card" href="pulsar.html" style="--card-accent: var(--pulsar);">
+        <span class="tag">Neutron Star</span>
+        <h3>The Crab Pulsar</h3>
+        <p>The crushed core of a star that exploded in 1054 CE, spinning ~30 times a second — sonified as its real rhythm.</p>
+      </a>
+      <a class="card" href="exoplanet.html" style="--card-accent: var(--exoplanet);">
+        <span class="tag">Exoplanet</span>
+        <h3>Kepler-10 b</h3>
+        <p>A rocky world orbiting its star every 20 hours — sonified as a steady tone with a real, periodic transit dip.</p>
+      </a>
+      <a class="card" href="halley.html" style="--card-accent: var(--halley);">
+        <span class="tag">Comet</span>
+        <h3>Halley's Comet</h3>
+        <p>A 76-year orbit calculated from real orbital mechanics — sonified as a journey from silence to a brilliant, brief peak.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-sub">Beyond the Core Four</div>
+    <h2 class="section-title">Want to hear more of the universe?</h2>
+    <p>A lighter, more exploratory collection of quick sonifications — other planets, a galaxy, another comet — built for fun rather than the same depth as the core four.</p>
+    <a class="card" href="explore.html" style="--card-accent: var(--explore); margin-top: 16px;">
+      <span class="tag">Bonus Collection</span>
+      <h3>Explore More Sounds →</h3>
+      <p>Jupiter, Saturn, Andromeda, and more.</p>
+    </a>
+  </section>
+
+  <section>
+    <div class="section-sub">About</div>
+    <h2 class="section-title">Why this project exists</h2>
+    <p>I love astronomy, and I love music — I often have music playing while I study space. Watching NASA's own data sonification work inspired me to try building something like it myself: taking real astronomical measurements and honestly translating them into sound, rather than just making something that sounds nice.</p>
+    <p>The full story — the data sources, the reasoning behind each mapping, and the problems I ran into along the way — is documented in the project journal on GitHub.</p>
+  </section>
+
+</div>
+
+<footer>
+  Data: AAVSO · ATNF Pulsar Catalogue · NASA Exoplanet Archive · JPL Small-Body Database<br>
+  <a href="https://github.com/" target="_blank">View source & journal on GitHub</a>
+</footer>
+
+<script src="starfield.js"></script>
+</body>
+</html>

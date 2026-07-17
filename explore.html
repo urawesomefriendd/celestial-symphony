@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore More Sounds — Celestial Symphony</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-explore">
+<canvas id="stars"></canvas>
+
+<nav class="top">
+  <a class="brand" href="index.html">Celestial Symphony</a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="explore.html" class="active">Explore</a>
+    <a href="https://github.com/" target="_blank">Journal ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Bonus Collection</div>
+    <h1>More Sounds of the Universe</h1>
+    <p class="lede">A lighter, more playful set of sonifications — each still grounded in one real fact, but explored quickly rather than in full depth.</p>
+  </div>
+
+  <div class="disclaimer">
+    Unlike the four core objects, these are quick explorations — each based on one real number, without the same depth of data cleaning, scale design, or written reasoning as the main collection. Consider them sketches, not finished pieces.
+  </div>
+
+  <div class="explore-grid">
+
+    <div class="explore-card">
+      <span class="tag">Gas Giant</span>
+      <h3>Jupiter</h3>
+      <p>The fastest-spinning planet in our solar system — one full rotation in just 9.9 hours. Sonified as a fast, low oscillation matching that real spin rate, compressed to an audible range.</p>
+      <audio controls src="audio/explore_jupiter.wav"></audio>
+    </div>
+
+    <div class="explore-card">
+      <span class="tag">Ringed Planet</span>
+      <h3>Saturn</h3>
+      <p>Saturn's day is 10.7 hours, and it takes 29.5 Earth years to orbit the sun. Two layered tones represent its fast spin and its slow, distant orbit at once.</p>
+      <audio controls src="audio/explore_saturn.wav"></audio>
+    </div>
+
+    <div class="explore-card">
+      <span class="tag">Planet</span>
+      <h3>Mars</h3>
+      <p>Mars's day is almost exactly Earth-length — 24.6 hours — making it one of the most "familiar-feeling" rotation rates in the solar system. Sonified as a steady, Earth-like pulse.</p>
+      <audio controls src="audio/explore_mars.wav"></audio>
+    </div>
+
+    <div class="explore-card">
+      <span class="tag">Galaxy</span>
+      <h3>Andromeda (M31)</h3>
+      <p>Our nearest large galactic neighbor, 2.5 million light-years away — and it's actually moving <em>toward</em> us, at about 110 km/s, destined to merge with the Milky Way in ~4.5 billion years. Sonified as a slowly descending drone, representing that inbound motion.</p>
+      <audio controls src="audio/explore_andromeda.wav"></audio>
+    </div>
+
+    <div class="explore-card">
+      <span class="tag">Comet</span>
+      <h3>Comet NEOWISE</h3>
+      <p>A comet discovered in 2020 with a much shorter, less extreme orbit than Halley (~6,800 years!). A quick brightness-to-pitch sketch, same idea as Halley but far less refined.</p>
+      <audio controls src="audio/explore_neowise.wav"></audio>
+    </div>
+
+    <div class="explore-card">
+      <span class="tag">Gravitational Waves</span>
+      <h3>Black Hole Merger (GW150914)</h3>
+      <p>The first gravitational wave ever directly detected, in 2015 — two black holes spiraling together and merging, chirping upward in frequency right before colliding. This is a simplified recreation of that real, famous "chirp."</p>
+      <audio controls src="audio/explore_blackhole_chirp.wav"></audio>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  These sketches use real reference numbers (rotation/orbital periods, recession velocity, the GW150914 chirp) but are simplified for quick exploration.<br>
+  <a href="https://github.com/" target="_blank">View source & journal on GitHub</a>
+</footer>
+
+<script src="starfield.js"></script>
+</body>
+</html>

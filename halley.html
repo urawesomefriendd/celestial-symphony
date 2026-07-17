@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halley's Comet — Celestial Symphony</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-halley">
+<canvas id="stars"></canvas>
+
+<nav class="top">
+  <a class="brand" href="index.html">Celestial Symphony</a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="https://github.com/" target="_blank">Journal ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Comet · 1P/Halley</div>
+    <h1>Halley's Comet</h1>
+    <p class="lede">A 76-year journey from the freezing dark past Neptune to a brief, brilliant swing around the sun — and back out again.</p>
+  </div>
+
+  <div class="orbit-divider">
+    <svg width="220" height="60" viewBox="0 0 220 60">
+      <ellipse class="path" cx="110" cy="30" rx="100" ry="18"/>
+      <circle class="marker" cx="20" cy="26" r="4"/>
+    </svg>
+  </div>
+
+  <section>
+    <div class="section-sub">The Real Object</div>
+    <h2 class="section-title">A journey too long to observe directly</h2>
+    <p>Halley's Comet has been recorded by human observers for over 2,000 years, and its orbit was the first ever mathematically predicted, by Edmond Halley in 1705. Its orbit is extremely elongated — spending most of its 76-year cycle far beyond Neptune, invisibly faint, before swinging in past Venus's orbit and blazing brightly for a brief stretch. It was last near the sun in 1986, and won't return until 2061.</p>
+  </section>
+
+  <section>
+    <div class="section-sub">The Data</div>
+    <h2 class="section-title">What I actually used</h2>
+    <table class="data">
+      <tr><th>Metric</th><th>Value</th></tr>
+      <tr><td>Orbital period</td><td class="val">75.92 years</td></tr>
+      <tr><td>Eccentricity</td><td class="val">0.968</td></tr>
+      <tr><td>Semi-major axis</td><td class="val">17.93 AU</td></tr>
+      <tr><td>Closest approach (perihelion)</td><td class="val">0.575 AU</td></tr>
+      <tr><td>Farthest point (aphelion)</td><td class="val">35.28 AU</td></tr>
+    </table>
+    <p class="source-note">Source: <a href="https://ssd.jpl.nasa.gov/" target="_blank">JPL Small-Body Database</a>, NASA/JPL-Caltech.</p>
+  </section>
+
+  <section>
+    <div class="section-sub">Listen</div>
+    <h2 class="section-title">76 years, compressed into a journey</h2>
+    <div class="listen-panel">
+      <div class="label">Audio</div>
+      <audio controls src="audio/halley_journey_melodic.wav"></audio>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-sub">The Mapping</div>
+    <h2 class="section-title">Why it sounds this way</h2>
+    <div class="mapping">
+      <div class="rule">calculated brightness (log-scaled) → pitch on a Lydian scale · orbital speed → tempo</div>
+      <p>No dataset covers Halley's full 76-year orbit directly — it's too faint to observe for most of that time. Instead, I used its real orbital elements and solved Kepler's Equation numerically to calculate its distance and speed from the sun at any point in the cycle. Because a comet's brightness changes so extremely near the sun, a direct mapping produced near-silence with one sharp spike — so I applied a logarithmic scale, the same technique real astronomical magnitude measurements use for the same reason. Pitch follows brightness on a Lydian scale (for an open, dreamlike quality), while note length follows the comet's real orbital speed — faster and shorter near the sun, slower and longer in deep space.</p>
+    </div>
+  </section>
+
+  <div class="pagenav">
+    <a href="exoplanet.html">← Kepler-10 b</a>
+    <a href="index.html">Back to Home</a>
+  </div>
+
+</div>
+
+<footer>
+  Data: JPL Small-Body Database, NASA/JPL-Caltech<br>
+  <a href="https://github.com/" target="_blank">View source & journal on GitHub</a>
+</footer>
+
+<script src="starfield.js"></script>
+</body>
+</html>

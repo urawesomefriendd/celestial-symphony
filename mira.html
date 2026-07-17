@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mira — Celestial Symphony</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-mira">
+<canvas id="stars"></canvas>
+
+<nav class="top">
+  <a class="brand" href="index.html">Celestial Symphony</a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="https://github.com/" target="_blank">Journal ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Variable Star · omi Cet</div>
+    <h1>Mira</h1>
+    <p class="lede">A red giant star that has been visibly pulsing brighter and dimmer for centuries — one of the first variable stars ever recorded.</p>
+  </div>
+
+  <div class="orbit-divider">
+    <svg width="220" height="60" viewBox="0 0 220 60">
+      <ellipse class="path" cx="110" cy="30" rx="100" ry="18"/>
+      <circle class="marker" cx="10" cy="30" r="4"/>
+    </svg>
+  </div>
+
+  <section>
+    <div class="section-sub">The Real Object</div>
+    <h2 class="section-title">A star that breathes</h2>
+    <p>Mira is a red giant roughly 300 light-years away, near the end of its life. As it fuses its remaining fuel, it swells and contracts in a slow, repeating cycle — brightening by a factor of hundreds, then fading almost out of naked-eye visibility, over and over, about every 332 days. Astronomers have tracked this cycle since 1596, making it one of the longest continuously observed variable stars in history.</p>
+  </section>
+
+  <section>
+    <div class="section-sub">The Data</div>
+    <h2 class="section-title">What I actually used</h2>
+    <table class="data">
+      <tr><th>Metric</th><th>Value</th></tr>
+      <tr><td>Raw observations collected</td><td class="val">962</td></tr>
+      <tr><td>Cleaned daily data points</td><td class="val">263</td></tr>
+      <tr><td>Time span</td><td class="val">~500 days</td></tr>
+      <tr><td>Approx. cycle length</td><td class="val">332 days</td></tr>
+    </table>
+    <p class="source-note">Source: <a href="https://www.aavso.org/" target="_blank">AAVSO International Database</a>, real visual observations submitted by citizen astronomers worldwide.</p>
+  </section>
+
+  <section>
+    <div class="section-sub">Listen</div>
+    <h2 class="section-title">Mira's melody</h2>
+    <div class="listen-panel">
+      <div class="label">Audio</div>
+      <audio controls src="audio/mira_scaled.wav"></audio>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-sub">The Mapping</div>
+    <h2 class="section-title">Why it sounds this way</h2>
+    <div class="mapping">
+      <div class="rule">brightness → pitch, snapped to an A minor scale</div>
+      <p>I averaged Mira's ~962 raw observations into 263 clean daily brightness values, since most raw observations were clustered within hours of each other and drowned out the real cycle. Each day's brightness becomes one note — brighter days are higher notes. I quantized the pitches to an A minor scale so the result sounds like an intentional melody rather than arbitrary tones, since real brightness values could otherwise land on any frequency.</p>
+    </div>
+  </section>
+
+  <div class="pagenav">
+    <a href="index.html">← Home</a>
+    <a href="pulsar.html">Next: The Crab Pulsar →</a>
+  </div>
+
+</div>
+
+<footer>
+  Data: AAVSO International Database<br>
+  <a href="https://github.com/" target="_blank">View source & journal on GitHub</a>
+</footer>
+
+<script src="starfield.js"></script>
+</body>
+</html>

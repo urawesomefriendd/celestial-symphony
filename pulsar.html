@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Crab Pulsar — Celestial Symphony</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-pulsar">
+<canvas id="stars"></canvas>
+
+<nav class="top">
+  <a class="brand" href="index.html">Celestial Symphony</a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="https://github.com/" target="_blank">Journal ↗</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Neutron Star · PSR J0534+2200</div>
+    <h1>The Crab Pulsar</h1>
+    <p class="lede">The crushed, spinning core of a star that a supernova ripped apart — an event ancient astronomers watched and recorded in the year 1054.</p>
+  </div>
+
+  <div class="orbit-divider">
+    <svg width="220" height="60" viewBox="0 0 220 60">
+      <ellipse class="path" cx="110" cy="30" rx="100" ry="18"/>
+      <circle class="marker" cx="110" cy="12" r="4"/>
+    </svg>
+  </div>
+
+  <section>
+    <div class="section-sub">The Real Object</div>
+    <h2 class="section-title">A lighthouse 6,500 light-years away</h2>
+    <p>When a massive star runs out of fuel and collapses, its core can crush down into a neutron star — an object so dense that a teaspoon of it would weigh billions of tons. As it collapses, it spins up dramatically and sweeps a beam of radio energy around like a lighthouse. Every time that beam crosses Earth, we detect a pulse — for the Crab Pulsar, that happens roughly 30 times every single second.</p>
+  </section>
+
+  <section>
+    <div class="section-sub">The Data</div>
+    <h2 class="section-title">What I actually used</h2>
+    <table class="data">
+      <tr><th>Metric</th><th>Value</th></tr>
+      <tr><td>Spin frequency (F0)</td><td class="val">29.9469230 Hz</td></tr>
+      <tr><td>Spin period</td><td class="val">≈ 0.0334 sec</td></tr>
+      <tr><td>Origin event</td><td class="val">Supernova, 1054 CE</td></tr>
+      <tr><td>Distance</td><td class="val">~6,500 light-years</td></tr>
+    </table>
+    <p class="source-note">Source: <a href="https://www.atnf.csiro.au/research/pulsar/psrcat/" target="_blank">ATNF Pulsar Catalogue</a>, CSIRO.</p>
+  </section>
+
+  <section>
+    <div class="section-sub">Listen</div>
+    <h2 class="section-title">A real neutron star's rhythm</h2>
+    <div class="listen-panel">
+      <div class="label">Audio</div>
+      <audio controls src="audio/crab_pulsar.wav"></audio>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-sub">The Mapping</div>
+    <h2 class="section-title">Why it sounds this way</h2>
+    <div class="mapping">
+      <div class="rule">real spin frequency → repeating click rate</div>
+      <p>Rather than a smooth tone, I generated sharp clicks at exactly the pulsar's real measured spin frequency — 29.95 times per second. That rate is fast enough for the human ear to perceive as a continuous buzzing texture rather than individual clicks, which is genuinely how this pulsar would sound if directly sonified at real speed — no artistic exaggeration needed.</p>
+    </div>
+  </section>
+
+  <div class="pagenav">
+    <a href="mira.html">← Mira</a>
+    <a href="exoplanet.html">Next: Kepler-10 b →</a>
+  </div>
+
+</div>
+
+<footer>
+  Data: ATNF Pulsar Catalogue, CSIRO<br>
+  <a href="https://github.com/" target="_blank">View source & journal on GitHub</a>
+</footer>
+
+<script src="starfield.js"></script>
+</body>
+</html>
